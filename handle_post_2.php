@@ -25,7 +25,7 @@
 		// Adjust for HTML tags:
 		$html_post = htmlentities($_POST['posting']);
 		$strip_post = strip_tags($_POST['posting']);
-		$wordwrap = wordwrap($_POST['posting'], 20, "<br />\n");
+		$wordwrap = wordwrap($_POST['posting'], 8, "\n", true);
 		print "<div>Thank you, $name, for your posting:
 		
 		<p>Original: $posting</p>
